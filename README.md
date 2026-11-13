@@ -1,9 +1,5 @@
 # Inl1 - Personal Developer Portfolio
 
-> An accessible, responsive personal developer portfolio website engineered with semantic HTML5 and modular Sass (SCSS), tailored for LIA (Lärande i arbete) internship applications and built to fulfill the highest academic grading criteria (**VG level**).
-
----
-
 ## 1. Project Overview
 
 This project is a personal developer portfolio designed for **Alex Morgan**, a frontend developer specializing in accessible, responsive web applications and modular CSS architectures. 
