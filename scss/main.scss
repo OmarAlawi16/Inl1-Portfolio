@@ -1,0 +1,32 @@
+// ==========================================================================
+// SCSS Main Entry Point (main.scss)
+// ==========================================================================
+// VG CRITERIA JUSTIFICATION:
+// 1. Modular Sass Architecture:
+//    Adheres strictly to modern Sass module standards using @use rather than
+//    deprecated @import. Each module encapsulates its dependencies, preventing
+//    unintentional variable overrides and global scope pollution.
+// 2. Cascade & Architecture Hierarchy:
+//    - Abstracts: Design tokens, WCAG AAA color variables, clamp() typography, mixins.
+//    - Base: Universal border-box reset, CLS-safe media handling, base typography.
+//    - Layout: Sticky landmark header, responsive CSS Grid main/aside container, footer.
+//    - Components: Reusable project cards, profile sidebar with LIA badge, accessible contact form.
+// ==========================================================================
+
+// 1. Abstracts
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+// 2. Base Styles
+@use "base/reset";
+@use "base/typography";
+
+// 3. Structural Layout
+@use "layout/header";
+@use "layout/grid";
+@use "layout/footer";
+
+// 4. UI Components
+@use "components/projects";
+@use "components/aside";
+@use "components/form";

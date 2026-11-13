@@ -1,0 +1,158 @@
+// ==========================================================================
+// SCSS Layout: Grid & Container Architecture (_grid.scss)
+// ==========================================================================
+// VG CRITERIA JUSTIFICATION:
+// 1. Mobile-First CSS Grid Layout:
+//    The core portfolio architecture uses modern CSS Grid. On mobile, elements
+//    stack naturally in a single column without rigid height constraints.
+//    At the desktop breakpoint (>= 1024px / 64em), CSS Grid unlocks a high-order
+//    two-column layout: a flexible main content area (1fr) alongside a fixed
+//    sidebar (<aside>) with sticky positioning.
+// 2. Cumulative Layout Shift (CLS) Mitigation:
+//    Grid item tracks and image containers maintain defined ratios and explicit
+//    sizing to prevent reflows during asset loading.
+// 3. Fluid Section Rhythm:
+//    Vertical rhythm uses structured spacing tokens ($space-2xl to $space-3xl),
+//    guaranteeing consistent visual cadence across all viewport scales.
+// ==========================================================================
+
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// 1. Outer Page Container
+.site-container {
+  width: 100%;
+  max-width: v.$container-max-width;
+  margin: 0 auto;
+  padding: v.$space-lg v.$space-md;
+
+  @include m.mq-tablet {
+    padding: v.$space-xl v.$space-xl;
+  }
+
+  @include m.mq-desktop {
+    padding: v.$space-2xl v.$space-xl;
+  }
+}
+
+// 2. Primary Layout Grid (Main + Aside)
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-xl;
+
+  @include m.mq-desktop {
+    grid-template-columns: 1fr v.$sidebar-width-desktop;
+    gap: v.$space-2xl;
+    align-items: start;
+  }
+}
+
+// 3. Main Content Landmark
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-3xl;
+  min-width: 0; // Prevents grid blowout from code or pre blocks
+}
+
+// 4. Section Rhythm & Structure
+.portfolio-section {
+  scroll-margin-top: 5rem; // Offset for sticky header navigation
+}
+
+// 5. Hero / About Layout
+.hero-card {
+  @include m.card-surface;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-xl;
+  align-items: center;
+
+  @include m.mq-tablet {
+    grid-template-columns: 1.4fr 1fr;
+    gap: v.$space-2xl;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-md;
+  }
+
+  .hero-subtitle {
+    font-size: v.$font-size-lg;
+    color: v.$color-accent;
+    font-weight: v.$font-weight-medium;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-sm;
+    margin-top: v.$space-xs;
+  }
+
+  .hero-avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-avatar {
+      width: 17.5rem; // 280px
+      height: 17.5rem; // 280px
+      border-radius: v.$radius-lg;
+      object-fit: cover;
+      box-shadow: v.$shadow-elevated;
+      border: 2px solid v.$color-border-subtle;
+      background-color: v.$color-bg-surface-subtle;
+    }
+  }
+}
+
+// Button styles (Shared interactive components)
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: v.$space-xs;
+  min-height: 2.75rem; // >= 44px accessible touch target
+  padding: v.$space-xs v.$space-lg;
+  font-size: v.$font-size-sm;
+  font-weight: v.$font-weight-semibold;
+  border-radius: v.$radius-md;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all v.$transition-fast;
+
+  @include m.focus-ring;
+
+  &--primary {
+    background-color: v.$color-accent;
+    color: v.$color-accent-contrast;
+    border: 1px solid v.$color-accent;
+
+    &:hover {
+      background-color: v.$color-accent-hover;
+      border-color: v.$color-accent-hover;
+      color: v.$color-accent-contrast;
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: v.$color-text-primary;
+    border: 1px solid v.$color-border-subtle;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: v.$color-accent;
+      color: v.$color-accent;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+  }
+}

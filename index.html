@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal developer portfolio of Alex Morgan – Frontend Developer specializing in accessible, responsive web applications and modular Sass architecture.">
+    <meta name="theme-color" content="#0b1120">
+    <title>Alex Morgan | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-container">
+        <a href="#about" class="site-brand" aria-label="Alex Morgan Portfolio Home">Alex Morgan</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-container layout-grid">
+      <main id="main-content" class="main-content">
+        <section id="about" class="portfolio-section" aria-labelledby="about-heading">
+          <div class="hero-card">
+            <div class="hero-content">
+              <span class="hero-subtitle">Frontend Web Developer</span>
+              <h1 id="about-heading">Crafting accessible, scalable, high-performance web experiences.</h1>
+              <p class="text-lead">
+                Hello! I am Alex Morgan, a frontend developer with a passion for semantic HTML5,
+                modular Sass architectures, and WCAG-compliant web accessibility. I build clean,
+                resilient user interfaces that work seamlessly on any device.
+              </p>
+              <p>
+                Currently pursuing advanced frontend studies and preparing for my upcoming LIA
+                (L&auml;rande i arbete) internship in Spring 2027. I specialize in turning complex
+                design systems into production-ready, performant code.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn--primary">
+                  <span>Get in Touch</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" aria-label="Alex Morgan on GitHub (opens in a new tab)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                  <span class="sr-only">(opens in a new tab)</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" aria-label="Alex Morgan on LinkedIn (opens in a new tab)">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                  <span class="sr-only">(opens in a new tab)</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-avatar-wrapper">
+              <img
+                src="assets/profile-placeholder.svg"
+                alt="Stylized geometric vector portrait of developer Alex Morgan with headphones"
+                width="280"
+                height="280"
+                class="hero-avatar"
+                loading="eager"
+                decoding="async">
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="portfolio-section" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Featured Projects</h2>
+          <p>
+            A curated selection of recent web development projects demonstrating modular CSS architecture,
+            inclusive accessibility engineering, and modern responsive design.
+          </p>
+
+          <div class="projects-grid">
+            <article class="project-card" aria-labelledby="project-1-title">
+              <div class="project-body">
+                <span class="project-badge">Web Application</span>
+                <h3 id="project-1-title" class="project-title">Nordic EcoTrack</h3>
+                <p class="project-description">
+                  A real-time sustainability and carbon footprint monitoring dashboard. Features
+                  custom SVG data visualizations, full keyboard accessibility, and a high-contrast
+                  dark mode satisfying WCAG AAA standards.
+                </p>
+                <ul class="project-tags" aria-label="Technologies used in Nordic EcoTrack">
+                  <li>TypeScript</li>
+                  <li>Sass (SCSS)</li>
+                  <li>HTML5 Canvas</li>
+                  <li>ARIA 1.2</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com/demo1" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  <span class="sr-only">for Nordic EcoTrack (opens in a new tab)</span>
+                </a>
+                <a href="https://github.com/example/nordic-ecotrack" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Source Code</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                  </svg>
+                  <span class="sr-only">for Nordic EcoTrack on GitHub (opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" aria-labelledby="project-2-title">
+              <div class="project-body">
+                <span class="project-badge">Productivity Tool</span>
+                <h3 id="project-2-title" class="project-title">DevPulse Agile Board</h3>
+                <p class="project-description">
+                  An accessible task management and sprint tracking kanban tool. Engineered with
+                  semantic drag-and-drop keyboard shortcuts, live region announcements, and responsive
+                  CSS Grid column flows.
+                </p>
+                <ul class="project-tags" aria-label="Technologies used in DevPulse Agile Board">
+                  <li>JavaScript (ES6+)</li>
+                  <li>CSS Grid</li>
+                  <li>ARIA Live Regions</li>
+                  <li>Local Storage</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com/demo2" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  <span class="sr-only">for DevPulse Agile Board (opens in a new tab)</span>
+                </a>
+                <a href="https://github.com/example/devpulse-board" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Source Code</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                  </svg>
+                  <span class="sr-only">for DevPulse Agile Board on GitHub (opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" aria-labelledby="project-3-title">
+              <div class="project-body">
+                <span class="project-badge">Design System</span>
+                <h3 id="project-3-title" class="project-title">Aura Component Library</h3>
+                <p class="project-description">
+                  A modular frontend design system built with Sass 7-1 architecture. Includes fluid
+                  typography tokens, accessible interactive modals, focus rings, and automated
+                  axe-core accessibility testing in CI/CD.
+                </p>
+                <ul class="project-tags" aria-label="Technologies used in Aura Component Library">
+                  <li>Sass Modular @use</li>
+                  <li>Design Tokens</li>
+                  <li>WCAG 2.1 AAA</li>
+                  <li>Axe-core</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://example.com/demo3" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  <span class="sr-only">for Aura Component Library (opens in a new tab)</span>
+                </a>
+                <a href="https://github.com/example/aura-design-system" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Source Code</span>
+                  <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                  </svg>
+                  <span class="sr-only">for Aura Component Library on GitHub (opens in a new tab)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="portfolio-section" aria-labelledby="contact-heading">
+          <div class="contact-card">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>
+              Interested in discussing an LIA internship position, frontend collaboration, or web
+              accessibility inquiry? Please complete the form below. All fields marked with
+              an asterisk (<span aria-hidden="true">*</span>) are mandatory.
+            </p>
+
+            <form action="#contact" method="post" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  <span>Full Name</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  required
+                  autocomplete="name"
+                  placeholder="e.g. Linnea Lindqvist"
+                  aria-describedby="hint-name">
+                <span id="hint-name" class="form-hint">Please enter your first and last name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  <span>Email Address</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  required
+                  autocomplete="email"
+                  placeholder="name@company.com"
+                  aria-describedby="hint-email">
+                <span id="hint-email" class="form-hint">Used solely for replying to your inquiry.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-website" class="form-label">
+                  <span>Website / Portfolio</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="url"
+                  id="contact-website"
+                  name="website"
+                  class="form-input"
+                  required
+                  autocomplete="url"
+                  placeholder="https://example.com"
+                  aria-describedby="hint-website">
+                <span id="hint-website" class="form-hint">Include full URL with http:// or https://</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">
+                  <span>Phone Number</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  class="form-input"
+                  required
+                  autocomplete="tel"
+                  placeholder="+46 70 123 4567"
+                  aria-describedby="hint-phone">
+                <span id="hint-phone" class="form-hint">Include country code for international inquiries.</span>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="contact-topic" class="form-label">
+                  <span>Inquiry Topic</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <select
+                  id="contact-topic"
+                  name="topic"
+                  class="form-select"
+                  required
+                  aria-describedby="hint-topic">
+                  <option value="" disabled selected>Please select an inquiry topic...</option>
+                  <option value="lia-internship">LIA Internship Opportunity (Spring 2027)</option>
+                  <option value="frontend-job">Full-time / Junior Frontend Role</option>
+                  <option value="freelance-project">Freelance / Project Collaboration</option>
+                  <option value="accessibility-audit">Accessibility / Code Audit</option>
+                  <option value="other">General Inquiries</option>
+                </select>
+                <span id="hint-topic" class="form-hint">Helps route your message to the appropriate folder.</span>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="contact-message" class="form-label">
+                  <span>Message</span>
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  required
+                  aria-describedby="hint-message"
+                  placeholder="Tell me about your project, timeline, or open role..."></textarea>
+                <span id="hint-message" class="form-hint">Minimum 20 characters recommended.</span>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="contact-consent"
+                  name="consent"
+                  class="form-checkbox"
+                  required>
+                <label for="contact-consent" class="checkbox-label">
+                  I agree that the submitted information can be stored and processed for the purpose
+                  of responding to this inquiry in accordance with data privacy standards.
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary btn-submit">
+                  <span>Send Message</span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <aside id="skills" class="sidebar-aside" aria-label="Developer profile and contact details">
+        <div class="sidebar-header">
+          <h2 class="sidebar-title">Alex Morgan</h2>
+          <p class="sidebar-tagline">Frontend Developer &amp; Accessibility Advocate</p>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-heading">Status</h3>
+          <div class="status-badge" role="status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for LIA (Spring 2027)</span>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-heading">Core Competencies</h3>
+          <div class="skills-group">
+            <span class="skills-category-label">Frontend &amp; Architecture</span>
+            <ul class="skills-pills" aria-label="Frontend skills">
+              <li>HTML5 Semantic</li>
+              <li>Modular Sass (SCSS)</li>
+              <li>CSS Grid &amp; Flexbox</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>React.js</li>
+            </ul>
+
+            <span class="skills-category-label">Accessibility &amp; Standards</span>
+            <ul class="skills-pills" aria-label="Accessibility and standards skills">
+              <li>WCAG 2.1 AA/AAA</li>
+              <li>WAI-ARIA</li>
+              <li>Semantic HTML</li>
+              <li>Screen Reader Testing</li>
+              <li>Keyboard Navigation</li>
+            </ul>
+
+            <span class="skills-category-label">Tools &amp; Workflow</span>
+            <ul class="skills-pills" aria-label="Tools and workflow skills">
+              <li>Git / GitHub</li>
+              <li>npm Scripts</li>
+              <li>Vite / Webpack</li>
+              <li>Lighthouse / Axe</li>
+              <li>Figma to Code</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-heading">Direct Details</h3>
+          <ul class="contact-details-list">
+            <li>
+              <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Stockholm, Sweden (Hybrid / Remote)</span>
+            </li>
+
+            <li>
+              <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <a href="mailto:alex.morgan.dev@example.com">alex.morgan.dev@example.com</a>
+            </li>
+
+            <li>
+              <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <a href="tel:+46701234567">+46 (0)70 123 4567</a>
+            </li>
+
+            <li>
+              <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">github.com/alexmorgan</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-copyright">
+          <p>&copy; 2026 Alex Morgan. Built with semantic HTML5 and modular Sass (SCSS).</p>
+          <span class="footer-badge">Crafted to exceed WCAG 2.1 AAA accessibility benchmarks.</span>
+        </div>
+        <a href="#main-content" class="back-to-top">
+          <span>Back to top</span>
+          <span aria-hidden="true">&uarr;</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

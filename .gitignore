@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Keep compiled CSS tracked in git for direct static hosting (e.g. GitHub Pages)
+!css/style.css

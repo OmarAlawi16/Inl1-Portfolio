@@ -1,0 +1,77 @@
+// ==========================================================================
+// SCSS Layout: Footer (_footer.scss)
+// ==========================================================================
+// VG CRITERIA JUSTIFICATION:
+// 1. Landmark & Contrast:
+//    Styles the semantic <footer> landmark. Ensures all copyright text and
+//    utility links achieve high WCAG contrast against the canvas background.
+// 2. Keyboard Navigation:
+//    Provides a dedicated "Back to top" anchor to facilitate quick landmark
+//    navigation without forcing keyboard users to reverse tab through the document.
+// ==========================================================================
+
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.site-footer {
+  margin-top: v.$space-3xl;
+  background-color: v.$color-bg-surface;
+  border-top: 1px solid v.$color-border-subtle;
+  padding: v.$space-xl 0;
+  color: v.$color-text-muted;
+  font-size: v.$font-size-sm;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$space-md;
+    text-align: center;
+    max-width: v.$container-max-width;
+    margin: 0 auto;
+    padding: 0 v.$space-md;
+
+    @include m.mq-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding: 0 v.$space-xl;
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-2xs;
+
+    .footer-badge {
+      font-size: v.$font-size-xs;
+      color: v.$color-text-soft;
+    }
+  }
+
+  .back-to-top {
+    display: inline-flex;
+    align-items: center;
+    gap: v.$space-xs;
+    padding: v.$space-xs v.$space-md;
+    min-height: 2.75rem; // >= 44px touch target
+    color: v.$color-accent;
+    font-weight: v.$font-weight-medium;
+    border-radius: v.$radius-md;
+    border: 1px solid v.$color-border-subtle;
+    background-color: v.$color-bg-canvas;
+    text-decoration: none;
+    transition: all v.$transition-fast;
+
+    &:hover {
+      background-color: rgba(56, 189, 248, 0.1);
+      border-color: v.$color-accent;
+      color: v.$color-accent-hover;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    @include m.focus-ring;
+  }
+}

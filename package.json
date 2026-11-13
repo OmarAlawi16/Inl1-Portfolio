@@ -1,0 +1,24 @@
+{
+  "name": "inl1-portfolio",
+  "version": "1.0.0",
+  "description": "Accessible, responsive personal developer portfolio website built with semantic HTML5 and modular Sass",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/style.css --style=expanded",
+    "watch:css": "sass --watch scss/main.scss css/style.css"
+  },
+  "keywords": [
+    "portfolio",
+    "html5",
+    "sass",
+    "scss",
+    "accessibility",
+    "wcag",
+    "responsive"
+  ],
+  "author": "Alex Morgan",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}
